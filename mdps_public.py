@@ -103,10 +103,10 @@ if (selected == 'Heart Disease Prediction'):
         cp = st.text_input('Chest Pain types')
         
     with col1:
-        trestbps = st.text_input('Resting Blood Pressure')
+        trestbps = st.text_input('Resting Blood Pressure                 ')
         
     with col2:
-        chol = st.text_input('Serum Cholestoral in mg/dl')
+        chol = st.text_input('Serum Cholestoral in mg/dl                   ')
         
     with col3:
         fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl (1 = true; 0 = false)')
