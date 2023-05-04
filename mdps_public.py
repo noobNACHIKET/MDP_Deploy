@@ -97,7 +97,7 @@ if (selected == 'Heart Disease Prediction'):
         age = st.text_input('Age')
         
     with col2:
-        sex = st.text_input('Sex')
+        sex = st.text_input('Sex (1 = male; 0 = female)')
         
     with col3:
         cp = st.text_input('Chest Pain types')
@@ -109,7 +109,7 @@ if (selected == 'Heart Disease Prediction'):
         chol = st.text_input('Serum Cholestoral in mg/dl')
         
     with col3:
-        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl (1 = true; 0 = false)')
         
     with col1:
         restecg = st.text_input('Resting Electrocardiographic results')
@@ -118,7 +118,7 @@ if (selected == 'Heart Disease Prediction'):
         thalach = st.text_input('Maximum Heart Rate achieved')
         
     with col3:
-        exang = st.text_input('Exercise Induced Angina')
+        exang = st.text_input('Exercise Induced Angina (1 = yes; 0 = no)')
         
     with col1:
         oldpeak = st.text_input('ST depression induced by exercise')
@@ -127,10 +127,10 @@ if (selected == 'Heart Disease Prediction'):
         slope = st.text_input('Slope of the peak exercise ST segment')
         
     with col3:
-        ca = st.text_input('Major vessels colored by flourosopy')
+        ca = st.text_input('No. of Major vessels colored by flourosopy')
         
     with col1:
-        thal = st.text_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.text_input('thal: 1 = normal; 2 = fixed defect; 3 = reversable defect')
         
         
      
