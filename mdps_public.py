@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun May  8 21:01:15 2022
+Created on Sun May  5 21:01:15 2023
 
-@author: siddhardhan
+@author: patil
 """
 
 import pickle
@@ -18,7 +18,24 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
 parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <link rel="stylesheet" href="styles.css">
+         <style>
+         .stApp {{
+                    background-image: url("https://images.ctfassets.net/jca811l64s20/3vYll4gn3K1aGMUZLclCQU/a60b18069699f8e0467c980eb2473e91/BLM-Org-Spotlight-Black-Womens-Health-Project_16x9.jpg?w=1600&fm=webp&q=70");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+    
 
+
+add_bg_from_url() 
 
 # sidebar for navigation
 with st.sidebar:
@@ -104,11 +121,9 @@ if (selected == 'Heart Disease Prediction'):
         
     with col1:
         trestbps = st.text_input('Resting Blood Pressure ')
-        st.write("")
         
     with col2:
         chol = st.text_input('Serum Cholestoral in mg/dl')
-        st.write("")
         
     with col3:
         fbs = st.text_input('Fasting Blood Sugar > 120 mg/dl (1 = true; 0 = false)')
